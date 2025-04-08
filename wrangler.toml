@@ -1,0 +1,10 @@
+name = "tunnel-worker"
+main = "src/index.js"
+compatibility_date = "2025-04-06"
+
+[[r2_buckets]]
+binding = "FLAG_BUCKET"
+bucket_name = "flag-bucket"
+
+[observability.logs]
+enabled = true
