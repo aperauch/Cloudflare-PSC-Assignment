@@ -1,0 +1,13 @@
+[Unit]
+Description=Daemon for Flask Application
+After=network.target
+
+[Service]
+User=root
+Group=root
+WorkingDirectory=/home/ubuntu/flask
+ExecStart=/usr/bin/python3 /home/ubuntu/flask/flask_app.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
